@@ -1,0 +1,17 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "A music app front end landing page made by following the design of Masudur Rahman.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music",
+    "app",
+    "design",
+    "exploration"
+  ],
+  "author": "Simonas Karalius",
+  "license": "MIT"
+}
