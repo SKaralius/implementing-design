@@ -12,38 +12,38 @@
         <div class="sidebar">
             <div class='user'>
                 <img src="./img/placeholder.jpg" alt="avatar" class='avatar'>
-                <h4>Simonas Karalius</h4>
+                <h5>Simonas Karalius</h5>
                 <button class="account-type">Premium</button>
             </div>
             <hr>
             <div class="content-select">
                 <ul>
-                    <li><i class="fas fa-microphone"></i>Podcast</li>
-                    <li><i class="far fa-play-circle"></i>Videos</li>
-                    <li><i class="far fa-compass"></i>Explore</li>
-                    <li><i class="fas fa-broadcast-tower"></i>Radio</li>
-                    <li><i class="far fa-calendar"></i>Events</li>
+                    <li><i class="fas fa-microphone"></i><button onclick=selectMenuItem(event)>Podcast</button></li>
+                    <li><i class="far fa-play-circle"></i><button onclick=selectMenuItem(event)>Videos</button></li>
+                    <li><i class="far fa-compass"></i><button onclick=selectMenuItem(event)>Explore</button></li>
+                    <li><i class="fas fa-broadcast-tower"></i><button onclick=selectMenuItem(event)>Radio</button></li>
+                    <li><i class="far fa-calendar"></i><button onclick=selectMenuItem(event)>Events</button></li>
                 </ul>
             </div>
             <hr>
             <div class='your-music-container'>
                 <h4 class='sidebar-title'>YOUR MUSIC</h4>
                 <ul>
-                    <li><i class="fas fa-headphones-alt"></i>Songs</li>
-                    <li><i class="far fa-image"></i>Albums</li>
-                    <li><i class="fas fa-user"></i>Artists</li>
+                    <li><i class="fas fa-headphones-alt"></i><button onclick=selectMenuItem(event)>Songs</button></li>
+                    <li><i class="far fa-image"></i><button onclick=selectMenuItem(event)>Albums</button></li>
+                    <li><i class="fas fa-user"></i><button onclick=selectMenuItem(event)>Artists</button></li>
                 </ul>
             </div>
             <hr>
             <div class='playlist-container'>
                 <div class="playlist-heading">
                     <h4 class='sidebar-title'>YOUR PLAYLIST</h4>
-                    <i class="fas fa-plus-circle"></i>
+                    <button><i class="fas fa-plus-circle"></i></button>
                 </div>
                 <ul>
-                    <li> <span class='playlist-circle'></span> Playlist 1</li>
-                    <li> <span class='playlist-circle'></span> Playlist 2</li>
-                    <li> <span class='playlist-circle'></span> Playlist 3</li>
+                    <li> <span class='playlist-circle'></span> <button onclick=selectMenuItem(event)>Playlist 1</button></li>
+                    <li> <span class='playlist-circle'></span> <button onclick=selectMenuItem(event)>Playlist 2</button></li>
+                    <li> <span class='playlist-circle'></span> <button onclick=selectMenuItem(event)>Playlist 3</button></li>
                 </ul>
             </div>
         </div>
@@ -71,12 +71,7 @@
             </div>
             <div class="artist-heading-container">
                 <div class="artist-heading">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga quia nam excepturi! Deserunt quas voluptatum veniam vel tempore, alias at non ipsa, eveniet optio expedita, minima ut mollitia cum.</p>
-                    <div class='tags'>
-                        <button>Electronic</button>
-                        <button>Rock</button>
-                    </div>
+
                 </div>
                 <div class="dots">
                     <ul>
@@ -87,8 +82,65 @@
                     </ul>
                 </div>
             </div>
+            <div class="top-songs">
+                <h2>Top Songs</h2>
+                <div class='top-song-list'>
+                    <ul>
+                        <li>
+                            <div class="song">
+                                <div><img src="img/placeholder.jpg" alt="album">
+                                <i class="fas fa-heart"></i>
+                                <p>Song Title</p></div>
+                                <p>Album Name</p>
+                                <p>4:19</p>
+                                <p>4,000,000</p>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </li>
+                        <li>                            <div class="song">
+                            <div><img src="img/placeholder.jpg" alt="album">
+                            <i class="fas fa-heart"></i>
+                            <p>Song Title</p></div>
+                            <p>Album Name</p>
+                            <p>4:21</p>
+                            <p>4,000,000</p>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div></li>
+                        <li>                            <div class="song">
+                            <div><img src="img/placeholder.jpg" alt="album">
+                            <i class="fas fa-heart"></i>
+                            <p>Song Title</p></div>
+                            <p>Album Name</p>
+                            <p>4:18</p>
+                            <p>4,000,000</p>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div></li>
+                        <li>                            <div class="song">
+                            <div><img src="img/placeholder.jpg" alt="album">
+                            <i class="fas fa-heart"></i>
+                            <p>Song Title</p></div>
+                            <p>Album Name</p>
+                            <p>4:17</p>
+                            <p>4,000,000</p>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="albums-container">
+                <div class="album-name-container">
+                    <h2>Albums</h2>
+                    <div class="album-control">
+                        <button onclick=move(false)><i class="fas fa-chevron-left"></i></button>
+                        <button onclick=move(true)><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="albums">
+                </div>
+            </div>
         </div>
     </main>
 </body>
 <script src="index.js"></script>
 </html>
+

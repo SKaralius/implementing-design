@@ -4,6 +4,7 @@ html, body, main {
     margin: 0;
     --texture: url(data:image/png;base64,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);
     --light-text-color: #f8f8f6;
+    --medium-text-color: #9195a0;
     --dark-text-color: #464952;
     --font-weight: 500;
     color: var(--dark-text-color);
@@ -20,7 +21,7 @@ hr{
     margin-bottom: 1.5rem;
     background-color: #111629;
     height: 2px;
-    width: 21rem;
+    width: calc(100% + 3rem);
     border: none;
 }
 
@@ -30,6 +31,8 @@ hr{
     flex-direction: column;
     width: 13rem;
     padding: 2rem;
+    padding-right: 0;
+    z-index: 1;
 }
 
 .user {
@@ -41,9 +44,11 @@ hr{
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 1rem;
+    margin-right: 2rem;
 }
 
-h4{
+.user > h5{
+    white-space: nowrap;
     margin: 0;
 }
 
@@ -68,15 +73,32 @@ h4{
 }
 
 .content-select > ul, .your-music-container > ul, .playlist-container > ul, .dots > ul{
-    font-size: 0.8rem;
     font-weight: var(--font-weight);
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-li{
+.sidebar li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li {
     padding: 0.5rem;
+}
+
+li > button {
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    color: var(--dark-text-color);
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1;
+    text-align: left;
 }
 
 li:first-child{
@@ -85,6 +107,23 @@ li:first-child{
 
 .playlist-container > ul > li {
     display: flex;
+}
+
+.active, .sidebar li:hover {
+    color: var(--light-text-color);
+    border-right: 3px var(--light-text-color) solid;
+  }
+  
+li>button:hover{
+    color: var(--light-text-color);
+}
+
+.selectedItem{
+    color: var(--light-text-color);
+    border-right: 3px var(--light-text-color) solid;
+}
+.selectedItem>button{
+    color: var(--light-text-color);
 }
 
 i {
@@ -108,13 +147,23 @@ i {
 .playlist-heading > h4{
     margin: 0;
 }
-.playlist-heading > i{
-    margin: 0;
+.playlist-heading > button > i{
+    color: var(--medium-text-color);
+    margin: 0 2rem;
+}
+.playlist-heading > button{
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.playlist-heading > button > i:hover{
+    color: var(--light-text-color);
 }
 
 .playlist-circle {
     background-color: transparent;
     border: 2px var(--dark-text-color) solid;
+    border-color: inherit;
     border-radius: 50%;
     margin: 0;
     float: left;
@@ -125,18 +174,18 @@ i {
 }
 
 
-
-
-
-
-
-
-
-
 .view {
+    width: 100%;
+}
+
+main::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
     background-image: radial-gradient(circle, rgb(22, 27, 54) 0%, #0a0c21 70%);
     background-color: #0a0c21;
-    flex-grow: 1;
+    z-index: -2;
 }
 
 .view-overlay {
@@ -147,11 +196,11 @@ i {
     background-image: var(--texture);
     opacity: 0.2;
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
 }
 
 .search-container{
-    margin: 3rem 3rem 0rem 3rem;
+    margin: 2rem 5rem 0rem 5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -180,7 +229,7 @@ padding-left: 0;
 .artist-heading-container{
     display: flex;
     justify-content: space-between;
-    margin: 2rem 3rem;
+    margin: 2.5rem 5rem;
 }
 
 .artist-heading{
@@ -188,11 +237,27 @@ padding-left: 0;
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    
+}
+
+.tags {
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.tags > button {
+    font-weight: var(--font-weight);
+    padding: 0.5rem;
+    width: 7rem;
+    color: var(--light-text-color);
+    background-color: var(--dark-text-color);
+    border: none;
+    border-radius: 3px;
+    margin-right: 0.5rem;
 }
 
 h1{
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .dots{
@@ -202,17 +267,19 @@ h1{
 }
 
 .dots>ul>li{
+    border: none;
     display: flex;
 }
 
 .dot {
     margin-top: 2rem;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: transparent;
     border-radius: 50%;
+    border: 1px var(--medium-text-color) solid;
 }
 
 .artist-image-container{
@@ -231,12 +298,131 @@ h1{
     right: 2rem;
 
     display: block;
-    max-width:35rem;
-    max-height:40rem;
+    max-width:45rem;
+    max-height:60rem;
     width: auto;
     height: auto;
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: var(--light-text-color);
   }
+
+.top-songs{
+    color: var(--medium-text-color);
+    margin: 0 5rem;
+}
+.top-songs > h2{
+    margin-bottom: 2rem;
+    color: var(--light-text-color)
+}
+
+.top-song-list > ul {
+    padding: 0;
+    list-style-type: none;
+}
+.top-song-list > ul > li{
+    padding: 0;
+    margin: 0.2rem 0;
+}
+
+.song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(110, 97, 97, 0.144);
+    /* backdrop-filter: saturate(180%) blur(40%); */
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+p{
+    margin: 0;
+}
+
+.song > div > img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+}
+
+.song > div{
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.song > div > i{
+margin-left: 2rem;
+}
+
+.albums-container{
+    margin-top: 5rem;
+    height: 100%;
+    background: rgb(16,21,40);
+    background: linear-gradient(180deg, rgba(16,21,40,0.7) 0%, rgba(10,12,33,1) 70%);
+    background: rgb(16,21,40);
+    background: linear-gradient(180deg, rgba(16,21,40,0.75) 0%, rgba(10,12,33,0.9724264705882353) 51%);
+    opacity: 1;
+    z-index: -2;
+    box-shadow: 0 0 5rem 5rem rgba(16,21,40,0.7483368347338936);
+}
+
+.album-name-container{
+    display: flex;
+    margin: 0 5rem;
+    color: var(--light-text-color);
+}
+
+
+.album-name-container > h2 {
+    margin: 1rem 0;
+}
+.album-name-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album-control > button > i {
+    color: var(--medium-text-color);
+    margin: 0;
+}
+.album-control > button > i:hover{
+    color: var(--light-text-color);
+}
+
+
+
+.album-control > button {
+ background-color: transparent;
+ border: none;
+}
+
+.album > img {
+    margin-right: 1rem;
+    width: 10rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.album > h5 {
+    width: 7rem;
+}
+
+.albums{
+    position: absolute;
+    overflow: hidden;
+    margin: 0 5rem;
+    display: flex;
+    opacity: 1;
+    z-index: 0;  
+}
+
+.move-right {
+    transition: transform 0.5s;
+    transform: translateX(-35%);
+}
+.move-left {
+    transition: transform 0.5s;
+    transform: translateX(0%);
+}
