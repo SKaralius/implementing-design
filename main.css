@@ -191,7 +191,7 @@ main::before{
 .view-overlay {
     content: "";
     position: absolute;
-    width: 100%;
+    width: calc(100% - 15rem);
     height: 100%;
     background-image: var(--texture);
     opacity: 0.2;
@@ -410,7 +410,7 @@ margin-left: 2rem;
 }
 
 .albums{
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     margin: 0 5rem;
     display: flex;
