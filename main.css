@@ -243,6 +243,7 @@ padding-left: 0;
 .artist-heading-container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 
     flex-grow: 1;
 }
@@ -333,7 +334,8 @@ h1{
     color: var(--medium-text-color);
 }
 .top-songs > h2{
-    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
     color: var(--light-text-color)
 }
 
@@ -445,17 +447,6 @@ margin-left: 2rem;
 }
 
 /* Responsive */
-
-// Media Mixins
-@media screen and (max-width: 374px) {
-		@content;
-}
-@media screen and (min-width: 930px) and (max-width: 1170px) {
-		@content;
-}
-@media screen and (min-width: 1171px) {
-		@content;
-}
 
 @media screen and (min-height: 720px) and (max-height: 900px){
     .content-box{
